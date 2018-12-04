@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h2>英雄搜索!!!!</h2>
+    <form action="./searchHero.php" method="get">
+        <input type="text" name="hero" placeholder="请输入查询的名字">
+        <br>
+        <input type="submit">
+        <!--  -->
+    </form>
+
+    <h2>英雄新增</h2>
+    <form action="./insertHero.php" method="post">
+        <input type="text" name="heroName" placeholder="英雄的名字">
+        <br>
+        <input type="text" name="heroIcon" placeholder="图片的url 网络的也可以哦">
+        <br>
+        <input type="submit">
+    </form>
+    <h2>英雄删除</h2>
+    <form action="./deleteHero.php" method="get">
+        <input type="text" name="heroName" placeholder="英雄的名字">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
